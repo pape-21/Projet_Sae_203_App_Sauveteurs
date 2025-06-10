@@ -1,15 +1,33 @@
 <?php
 
-function connexion() {
-    require('models/connection.php');
-    $c = connection();
-    require('models/family_crud.php');
-    $families = find_all_families($c);
-    
-    //View display
-    require('views/families_view.php');
-    families_view($families);
+//function connexion() {
+//    require('models/connection.php');
+//    $c = connection();
+//    require('models/family_crud.php');
+//    $families = find_all_families($c);
+//    
+//    //View display
+//    require('views/families_view.php');
+//    families_view($families);
+//}
+
+
+
+function gestion_methode_requete(){
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $username=$_POST["username"];
+        $password= $_POST["password"];
+        require('crud/crud_login.php')
+        
+        
+        
+        
+    } else {
+        
+        require('views/login.php');
+    }
 }
+
 
 
 function family_print_ctrl() {

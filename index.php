@@ -13,11 +13,12 @@
     
     //We switch to the good controller
     switch ($route) {
-        case null:
+        case "login":
+            require('controllers/logincontrollers.php');
+            gestion_methode_requete();
 
-            require('views/login.php');
             break;
-            
+        
         
         default:
             require('views/404_view.php');

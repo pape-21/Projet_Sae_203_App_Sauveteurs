@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="login-container">
-        <form method="post" action="../controllers/loginController.php">
+        <form method="post" action="index.php?route=login">
             <h2>Connexion</h2>
             <label>Nom d'utilisateur</label>
             <input type="text" name="username" required>
