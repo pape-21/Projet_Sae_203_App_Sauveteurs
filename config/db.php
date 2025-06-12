@@ -1,11 +1,6 @@
 <?php
-try {
-    $pdo = new PDO('mysql:host=192.168.156.221;dbname=projet4_tp2;charset=utf8', 'pfall03', 'gtrnet');
-    echo "Connexion OK avec utilisateur : pfall03\n";
-} catch (PDOException $e) {
-    echo "Erreur de connexion : " . $e->getMessage();
-}
-exit;
+// config/db.php
+// Fichier de configuration pour la connexion à la base de données
 
 function db_connect() {
     try {
