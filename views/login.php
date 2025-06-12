@@ -1,7 +1,7 @@
 <?php
 if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
 
-<link rel='stylesheet' href='assets/css/style.css'>
+<link rel='stylesheet' href='objets/css/style.css'>
 <div class='container'>
     <h2>Connexion</h2>
     <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
