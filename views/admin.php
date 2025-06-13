@@ -1,6 +1,7 @@
-<link rel='stylesheet' href='assets/css/style.css'>
+<?php include 'views/header.php'; ?>
+<link rel='stylesheet' href='objets/css/style.css'>
 <div class='container'>
-    <h2>Gestion des comptes</h2>
+    <h2>Liste des comptes utilisateur</h2>
     <table border='1'>
         <tr><th>Login</th><th>Profil</th></tr>
         <?php foreach ($utilisateurs as $u): ?>
@@ -11,3 +12,6 @@
         <?php endforeach; ?>
     </table>
 </div>
+
+
+<?php require 'views/footer.php'; ?>

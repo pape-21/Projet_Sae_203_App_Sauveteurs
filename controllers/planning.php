@@ -1,5 +1,6 @@
 <?php
 require_once 'models/planning.php';
+#include 'views/header.php'; 
 if (!isset($_SESSION['user'])) {
     header('Location: index.php?page=login');
     exit;

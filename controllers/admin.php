@@ -1,5 +1,7 @@
 <?php
+
 require_once 'models/user.php';
+include 'views/header.php'; 
 if (!isset($_SESSION['user']) || $_SESSION['user']['profil'] !== 'administration') {
     header('Location: index.php?page=accueil');
     exit;

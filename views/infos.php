@@ -1,4 +1,8 @@
-<link rel='stylesheet' href='assets/css/style.css'>
+<?php
+include 'views/header.php';
+?>
+
+<link rel='stylesheet' href='./objets/css/style.css'>
 <div class='container'>
     <h2>Infos générales - Sauveteurs</h2>
     <table border='1'>
@@ -14,3 +18,5 @@
         <?php endforeach; ?>
     </table>
 </div>
+
+<?php require 'views/footer.php'; ?>

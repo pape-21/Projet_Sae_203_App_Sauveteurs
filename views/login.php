@@ -1,13 +1,19 @@
-<?php
-if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
+<link rel='stylesheet' href='./objets/css/style.css'>
 
-<link rel='stylesheet' href='objets/css/style.css'>
 <div class='container'>
     <h2>Connexion</h2>
-    <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
+    <?php if (!empty($error)): ?>
+        <p class='error'><?= htmlspecialchars($error) ?></p>
+    <?php endif; ?>
     <form method='post' action='index.php?page=login'>
-        <label>Login : <input type='text' name='login' required></label><br>
-        <label>Mot de passe : <input type='password' name='mot_de_passe' required></label><br>
+        <label for='login'>Login :</label><br>
+        <input type='text' id='login' name='login' required><br><br>
+
+        <label for='mot_de_passe'>Mot de passe :</label><br>
+        <input type='password' id='mot_de_passe' name='mot_de_passe' required><br><br>
+
         <input type='submit' value='Se connecter'>
     </form>
 </div>
+
+<?php require 'views/footer.php'; ?>

@@ -1,60 +1,25 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background: url('../images/background.jpg') ;
+    background: url('../images/background.jpg') no-repeat center center fixed;
     background-size: cover;
+    background-position: center center;
     margin: 0;
     padding: 0;
 }
+
+/* Container Styling */
 .container {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     margin: 40px auto;
     width: 80%;
     border-radius: 10px;
 }
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-.affectation-disponible {
-    background-color: #c8f7c5;
-}
-.affectation-approche {
-    background-color: #e5ccff;
-}
-.affectation-sous-terre {
-    background-color: #d2b48c;
-}
-.affectation-gestion {
-    background-color: #ffff99;
-}
-.affectation-exterieur {
-    background-color: #ffd699;
-}
-.affectation-repos {
-    background-color: #add8e6;
-}
-.affectation-brancardage {
-    background-color: #ff9999;
-}
-
-.legend ul {
-    list-style: none;
-    padding: 0;
-}
-.legend li {
-    display: inline-block;
-    margin: 4px 10px 4px 0;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-weight: bold;
-    border: 1px solid #ccc;
-}
-
+/* Navigation Bar */
 nav {
-    background-color: black; 
+    background-color: black;
     padding: 10px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -73,4 +38,109 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Affectation Classes */
+.affectation-disponible {
+    background-color: #2bd61f;
+}
+
+.affectation-approche {
+    background-color: #e5ccff;
+}
+
+.affectation-sous-terre {
+    background-color: #d2b48c;
+}
+
+.affectation-gestion {
+    background-color: #ffff99;
+}
+
+.affectation-exterieur {
+    background-color: #ffd699;
+}
+
+.affectation-repos {
+    background-color: #add8e6;
+}
+
+.affectation-brancardage {
+    background-color: #ff9999;
+}
+
+/* Legend Styling */
+.legend ul {
+    list-style: none;
+    padding: 0;
+}
+
+.legend li {
+    display: inline-block;
+    margin: 4px 10px 4px 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+/* Buttons Styling */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.action-buttons .btn.mouton {
+    display: inline-block;
+    background-color: white;
+    color: #666; /* gris doux */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.action-buttons .btn.mouton:hover {
+    background-color: #f7f7f7;
+    color: #444; /* gris un peu plus foncé au survol */
+    border-color: #aaa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 8px;
 }
