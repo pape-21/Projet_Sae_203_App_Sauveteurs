@@ -2,7 +2,7 @@
 
 <div class="container">
   <h2>Ajouter un utilisateur</h2>
-  <form method="POST" >
+  <form method="POST" action="index.php?page=ajouter_utilisateur">
     <label for="login">Login :</label>
     <input type="text" id="login" name="login" required><br>
 
@@ -19,11 +19,4 @@
     <button type="submit">Ajouter</button>
   </form>
 </div>
-
-
-<?php 
-
-require 'views/header.php';
-
-?>
 <?php include 'views/footer.php'; ?>

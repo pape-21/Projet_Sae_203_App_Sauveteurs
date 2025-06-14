@@ -47,6 +47,16 @@ try {
             require 'controllers/add_users.php';
             break;
         
+        
+        
+        case 'modifier_utilisateur':
+            require 'controllers/modifier_utilisateur.php';
+            break;
+            
+        case 'supprimer_utilisateur':
+            require 'controllers/supprimer_utilisateur.php';
+            break;
+            
 
 
         default:
