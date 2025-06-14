@@ -46,6 +46,8 @@ try {
         case 'ajouter_utilisateur':
             require 'controllers/add_users.php';
             break;
+        
+
 
         default:
             throw new Exception("Page non trouvée : $page");
