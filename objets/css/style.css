@@ -1,30 +1,29 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    background-position: center center;
     margin: 0;
     padding: 0;
+    background: url('../images/background1.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ajuste l'image pour couvrir toute la zone */
 }
 
 /* Container Styling */
 .container {
-    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     margin: 40px auto;
     width: 80%;
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 /* Navigation Bar */
 nav {
     background-color: black;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 10px;
     display: flex;
     gap: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 nav a {
@@ -138,9 +137,8 @@ tr:nth-child(even) {
 /* Footer Styling */
 .footer {
     text-align: center;
-    margin-top: 20px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
     color: white;
     border-radius: 8px;
 }
