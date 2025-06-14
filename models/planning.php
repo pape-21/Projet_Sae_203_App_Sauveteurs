@@ -10,3 +10,16 @@ function get_recent_planning() {
             ORDER BY p.datetime_slot ASC";
     return $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
