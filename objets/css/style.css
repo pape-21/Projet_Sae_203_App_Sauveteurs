@@ -1,13 +1,10 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../images/background1.jpg') no-repeat center center fixed;
-    background-size: cover; /* Ajuste l'image pour couvrir toute la zone */
-}
+    background: url('/objets/images/background1.jpg') no-repeat center center fixed; 
+    background-size: cover;  
 
-/* Container Styling */
 .container {
     padding: 20px;
     margin: 40px auto;
@@ -16,7 +13,6 @@ body {
     background: rgba(255, 255, 255, 0.9);
 }
 
-/* Navigation Bar */
 nav {
     background-color: black;
     padding: 10px;
@@ -141,4 +137,6 @@ tr:nth-child(even) {
     background-color: black;
     color: white;
     border-radius: 8px;
+}
+
 }
