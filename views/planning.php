@@ -41,10 +41,11 @@ if ($_SESSION['user']['profil'] === 'gestionnaire'):
 ?>
 
 <div class="action-buttons">
-    <a href="index.php?page=modifier_planning" class="btn mouton">Modifier le planning</a>
-    <a href="index.php?page=ajouter_sauveteur" class="btn mouton">Ajouter un sauveteur</a>
-    <a href="index.php?page=supprimer_sauveteur" class="btn mouton">Supprimer un sauveteur</a>
+      <a href="index.php?page=ajouter_planning" class="btn mouton">Ajouter un créneau</a>
+      <a href="index.php?page=modifier_planning" class="btn mouton">Modifier un créneau</a>
+      <a href="index.php?page=supprimer_planning" class="btn mouton">Supprimer un créneau</a>
 </div>
+
 <?php endif; ?>
 
     <div class="legend">

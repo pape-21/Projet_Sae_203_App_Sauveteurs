@@ -1,5 +1,5 @@
 <?php
-require_once 'models/planning_crud.php';
+require_once 'models/planning.php';
 
 $plannings = getAllPlanning();
 

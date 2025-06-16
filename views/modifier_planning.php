@@ -1,39 +1,18 @@
-<h2>Modifier le planning</h2>
-
-<?php if (isset($message)): ?>
-    <p><?= htmlspecialchars($message) ?></p>
-<?php endif; ?>
-
-<?php if (!empty($plannings)): ?>
-    <pre><?php print_r($plannings); ?></pre>
-
-    <table border="1">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Date</th>
-                <th>Heure</th>
-                <th>Nom</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
+<?php include 'views/header.php'; ?>
+<div class="container">
+    <h2>Modifier un créneau</h2>
+    <form method="POST">
+        <label>Crenau :</label>
+        <select name="id_planning" required>
             <?php foreach ($plannings as $p): ?>
-            <tr>
-                <form method="POST" action="index.php?page=modifier_planning_action">
-                    <td><?= htmlspecialchars($p['id']) ?></td>
-                    <td><input type="date" name="date" value="<?= htmlspecialchars($p['date']) ?>"></td>
-                    <td><input type="time" name="heure" value="<?= htmlspecialchars($p['heure']) ?>"></td>
-                    <td><input type="text" name="nom" value="<?= htmlspecialchars($p['nom']) ?>"></td>
-                    <td>
-                        <input type="hidden" name="id" value="<?= $p['id'] ?>">
-                        <input type="submit" value="Enregistrer">
-                    </td>
-                </form>
-            </tr>
+                <option value="<?= $p['id_planning'] ?>"><?= $p['id_planning'] ?> - <?= $p['datetime_slot'] ?></option>
             <?php endforeach; ?>
-        </tbody>
-    </table>
-<?php else: ?>
-    <p>Aucun planning disponible.</p>
-<?php endif; ?>
+        </select><br>
+
+        <label>Nouvelle date et heure :</label>
+        <input type="datetime-local" name="datetime_slot" required><br>
+
+        <button type="submit">Modifier</button>
+    </form>
+</div>
+<?php include 'views/footer.php'; ?>

@@ -56,10 +56,19 @@ try {
         case 'supprimer_utilisateur':
             require 'controllers/supprimer_utilisateur.php';
             break;
+    
+        case 'ajouter_planning':
+            require 'controllers/ajouter_planning.php';
+            break;
+            
         case 'modifier_planning':
             require 'controllers/modifier_planning.php';
             break;
             
+        case 'supprimer_planning':
+            require 'controllers/supprimer_planning.php';
+            break;
+                
             
 
         default:
