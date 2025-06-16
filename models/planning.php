@@ -12,6 +12,13 @@ function get_recent_planning() {
 }
 
 
+function update_planning($id_planning, $date, $heure) {
+    $pdo = db_connect();
+
+    $datetime = $date . ' ' . $heure;
+    $stmt = $pdo->prepare("UPDATE planning SET datetime_slot = ? WHERE id_planning = ?");
+    $stmt->execute([$datetime, $id_planning]);
+}
 
 
 

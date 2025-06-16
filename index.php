@@ -56,8 +56,11 @@ try {
         case 'supprimer_utilisateur':
             require 'controllers/supprimer_utilisateur.php';
             break;
+        case 'modifier_planning':
+            require 'controllers/modifier_planning.php';
+            break;
             
-
+            
 
         default:
             throw new Exception("Page non trouvée : $page");
