@@ -69,7 +69,23 @@ try {
             require 'controllers/supprimer_planning.php';
             break;
                 
+        case 'ajouter_sauveteur':
+            require 'controllers/ajouter_sauveteur.php';
+            break;
             
+        case 'modifier_sauveteur':
+            require 'controllers/modifier_sauveteur.php';
+            break;
+            
+        case 'supprimer_sauveteur':
+            require 'controllers/supprimer_sauveteur.php';
+            break;
+        
+
+        case 'sauveteur':
+        require 'controllers/sauveteur.php';
+        break;
+                
 
         default:
             throw new Exception("Page non trouvée : $page");

@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost/dev/Projet_Sae_203_App_Sauveteurs/",
+            "url": "http://localhost/dev/Projet_Sae_203_App_Sauveteurs-1/",
             "webRoot": "${workspaceFolder}"
         }
     ]
